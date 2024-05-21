@@ -42,7 +42,7 @@ class PostController extends Controller
     $phone = $req->phone;
     $city = $req->city;
 
-    try {
+   
         DB::table('leads')->insert([
             'ip' => $ip,
             'surname' => $surname,
@@ -53,14 +53,7 @@ class PostController extends Controller
             'city' => $city,
             'created_at' => now()
         ]);
-    } catch (\Throwable $e) {
-        return response()->json(['error' => 'Ошибка при вставке данных: ' . $e->getMessage()], 500);
-    }
-
-    DB::table('leads')->insert(['ip' => $ip]);
-
-
-
+  
     return view('post');
     
 
