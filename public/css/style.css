@@ -1,0 +1,48 @@
+.form{
+    border: 1px solid ;
+    background: #ebebeb;
+    border-radius: 10px;
+}
+body{
+    background: url('/images/background.jpeg') no-repeat;
+    
+}
+.label{
+    margin-right: 15px;
+    text-align: end;
+}
+.btn{
+    width: 100%;
+}
+.lock-icon {
+    width: 30px; 
+    height: 30px;
+    margin-left: 5px; 
+}
+
+
+@media(max-width:576px){
+    .form{
+        width: 100%;
+    }
+    .fs-5{
+        font-size: 14px;
+    }
+    .label-input,.input-group-append {
+        width: 100%;
+        margin-right: 0;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    .label{
+        text-align: center!important;
+    }
+   
+    .container-input{
+        display: flex;
+        flex-direction: column;
+
+    }
+    
+
+}
